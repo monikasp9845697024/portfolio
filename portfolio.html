@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/p1.jpeg">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap&#39;');
+        *{
+            margin: 0px;
+        }
+        .nav-bar{
+            height: 100vh;
+            width: 200px;
+            background-image: linear-gradient(to right top,red 0%,rgb(0, 162, 255) 35%, #ff0077 100%);
+            position: fixed;
+            
+        }
+        .nav-image img{
+            width: 70%;
+            border-radius: 100%;
+            margin: 25px;
+        }
+        .nav-items ul{
+            list-style-type: none;
+            margin-top: 20px;  
+        }
+        .nav-items a{
+            color: rgb(70, 6, 6);
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'DynaPuff', cursive;
+            line-height: 45px;
+            display: inline-block;
+            width: 150px; 
+        }
+        .nav-items a:hover{
+            color:ghostwhite;
+            text-decoration: underline;  
+        }
+        .content{
+            height: 2000px;
+            width: 100%;
+        
+            display: flex;
+            justify-content:center ;
+        }
+        .main-container{
+            display: flex;
+        }
+        .content-home{
+            margin-top: 400px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+            
+            background-image: url("https://i.gifer.com/E2kI.gif");
+            background-size: cover;
+            border-radius: 15px;
+            
+            display: flex;
+            position: relative;
+            bottom: 300px;
+
+        }
+        .content-home-name{
+            margin: 120px 50px;
+        }
+        .content-home-name h1{
+            font-size: 50px;
+            color: rgb(19, 21, 24);
+        }
+        .content-home-name p{
+            color: rgb(27, 4, 63);
+            height: 150px;
+            width: 400px;
+            text-align: justify;
+            font-size: 20px;
+        }
+        .content-home-image img{
+            position: relative;
+            right: 10px;
+            width: 450px;
+            border-radius: 40px;
+            height: 450px;
+
+
+            top: 40px;
+
+        }
+        .content-cont{
+            margin:30px;
+        
+
+        }
+
+        .qualification{
+            margin-top: 100px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+    
+            background-color:turquoise;
+            background-size: cover;
+            background-image: url("https://wallpaperaccess.com/full/3356334.jpg");
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+
+        }
+        .qual-details{
+            margin: 50px 50px;
+        }
+        .qualification h3{
+            color:rgb(241, 217, 217);
+        }
+        .qualification h2{
+            color:rgb(245, 171, 110);
+        }
+        .qu{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .skill{
+            margin-top: 100px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+        
+            background-color:#ff0077;
+            background-size: cover;
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            background-image: url("https://wallpaperaccess.com/full/3356593.jpg");
+        }
+        .skill-cont{
+            margin-top: 30px;
+            margin-left: 30px;
+
+        }
+        .skill-home img{
+            position: relative;
+            left: 280px;
+            width: 300px;
+            height: 300px;
+
+            top: 60px;
+
+        }
+        .skill-cont h1{
+            color:rgb(231, 211, 231);
+        }
+        .projects{
+            margin-top: 100px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+        
+            background-color:#5eff00d5;
+            background-size: cover;
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            background-image: url("https://wallpaperaccess.com/full/3040729.jpg");
+
+        }
+        .projects-cont{
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .projects-cont h2{
+            color: rgb(216, 226, 228);
+            font-size: 40px;
+            
+
+        }
+        .projects-cont a {
+        text-decoration: none;
+        color: rgb(212, 248, 122);
+        font-size: 25px;
+        margin: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+        .projects-cont p{
+            text-align: justify;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .projects-cont a:hover{
+            text-decoration: underline;
+        color: rgb(186, 206, 230);
+        }
+.info{
+    margin-top: 100px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+        background-image: url("https://w0.peakpx.com/wallpaper/366/537/HD-wallpaper-liquid-bubbles-macro-orange-bright-thumbnail.jpg");
+            background-color:#bb1cfad5;
+            background-size: cover;
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            flex-direction: column;
+}
+.info-cont{
+    margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+}
+.info-cont h1{
+    color: #d1ebda;
+            font-size: 40px;
+            
+
+}
+.info-cont p{
+    text-align: justify;
+            font-size: 150px;
+            
+}
+.footer{
+    margin-top: 100px;
+            margin-left: 210px;
+
+            height: 500px;
+            width: 1000px;
+        
+            background-color:#e58ca7d5;
+            background-size: cover;
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            flex-direction: column;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43fepMxp-ah2YeLiGrDOngz1fSlLWtmYlb46jAP0hEZeCJXJznmW1RMZ3DWjgxdesDpw&usqp=CAU");
+}
+.footer-cont{
+    width: 50%;
+            border-radius: 100%;
+            margin: 10px;
+            margin-top: 100px;
+            margin-left:300px;
+}
+.footer-cont img{
+    height: 50px;
+            width: 50px;
+            border-radius: 20px;
+            align-items: center;
+            margin: 100px;
+            justify-content: center;
+            margin-top: 0px;
+            margin-left: 0px;
+}
+.share img{
+    height: 50px;
+    width: 50px;
+}
+.footer h3{
+    color: #d1ebda;
+            font-size: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+}
+
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <!-- Nav-Bar starts -->
+    <div class="nav-bar">
+        <div class="nav-image">
+            <img src="Images/p1.jpeg" alt="">
+        </div>
+        <div class="nav-items">
+            <ul>
+                <a href="#name">
+                    <li>Home</li>
+                </a>
+                <a href="#qual">
+                    <li>Qualification</li>
+                </a>
+                <a href="#skill">
+                    <li>Skills</li>
+                </a>
+                <a href="#pro">
+                    <li>Projects</li>
+                </a>
+                <a href="#info">
+                    <li>Info</li>
+                </a>
+                <a href="#foot">
+                    <li>Reach me</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!-- Nav-Bar ends -->
+    <!-- content starts -->
+    <div class="content">
+        <div class="content-cont" >
+        <div class="content-home" id="name" >
+            <div class="content-home-name">
+                <h1>MONIKA SP</h1>
+                <br>
+                <br>
+                <p>My name is Monika sp and I am from Mandya . I’m passionate about Cultural activites like Danceing,singing,yoga 
+                    and I always stay on top of trends to connect with our readers.”  </p>
+            </div>
+            <div class="content-home-image">
+                <img src="images/p2.jpeg" alt="">
+            </div>
+        </div>
+    
+    
+    <!-- content ends -->
+    <!-- qualification start -->
+    <div class="qualification" id="qual">
+        <div class="qu">
+        <h2>Qualification:</h2>
+        <br>
+        <br>
+        <div class="quali-details">
+            <ul>
+                <li>
+                    <h3>BE(Information secince engineering)</h3> </li>
+                <ul>
+                    <li>
+                        <h3>PES College of engineering Mandya</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h3>63.6%</h3> </li>
+                    </ul>
+                </ul>
+            </ul>
+            <br>
+            <ul>
+                <li>
+                    <h3>Diploma(Computer secince engineering)</h3> </li>
+                <ul>
+                    <li>
+                        <h3>BET Polytechnic Mandya</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h3>71.59%</h3> </li>
+                    </ul>
+                </ul>
+            </ul>
+            <br>
+            <ul>
+                <li>
+                    <h3>SSLC</h3> </li>
+                <ul>
+                    <li>
+                        <h3>Rotary education soceity Mandya</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h3>70%</h3> </li>
+                    </ul>
+                </ul>
+            </ul>
+            
+        </div>
+        </div>
+    </div>
+
+    
+    
+<!-- qulificaion end -->
+<!-- skill -->
+<div class="skill" id="skill">
+    <div class="skill-cont">
+        <h1>Skills</h1>
+        <br>
+        <ol>
+            <li>
+                <h2>Python </h2> <p><big>Operators,Branching,Looping,Collections,Functions,Oop's.</big> </p>
+            </li>
+            <br>
+            <li>
+                <h2>Web development </h2> <P><big>Datatypes,Commands,Constraintas,Operator,Order by clause,Function,Sub Query,Joins.</big></P>
+            </li><br>
+            <li>
+                <h2>SQL </h2><p><big>HTML,CSS,JS.</big></p> 
+            </li><br>
+            <li>
+                <h2>Devops </h2><p><big>Linux,AWS.</big></p> 
+            </li>
+        </ol>
+        </div>
+        
+    
+</div>
+<!-- skill ended -->
+<!-- projects start -->
+<div class="projects"id="pro">
+    <div class="projects-cont">
+        <h2>Projects</h2>
+        <br>
+        <br>
+
+
+        <p><a href="https://www.ijraset.com/research-paper/automated-attendance-system-using-face-recognition">
+            <b>Face recognition automated attendance system</a><br><br>
+                <a href="https://www.myntra.com/">
+            Online Shopping<br><br></a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S1877050918318210">
+            Fake News Detection<br><br></a>
+            <a href="C:\Users\win10\Desktop\web\project\gaming.html">
+
+            Gaming web site<br></a>
+
+        </b>
+           </p>
+
+    </div>
+</div>
+<div class="info" id="info">
+    <div class="info-cont">
+        <h1>Information</h1>
+        <br>
+        <br>
+        <p>
+        
+        <h2>Name    :    Monika SP</h2>
+        <br>
+        <h2>Father  :    Prakash</h2><br>
+        <h2>Mother  :    Shantha</h2><br>
+        <h2>DOB     :    05/02/2000</h2><br>
+        <h2>Place   :    Mandya</h2><br>
+        <h2>Address : Guthal colony mandya 571403</h2>
+        </p>
+        </div>
+
+
+
+    </div>
+    <div class="footer" id="foot">
+        <h3>Contect Us</h3>
+        <div class="footer-cont">
+            
+  
+  <a href="https://www.whatsapp.com"><img src="https://logowik.com/content/uploads/images/whatsapp-icon6198.jpg" alt=""></a>
+  <a href="https://www.facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxxNPWa7tejN-8lre7_aulmK2dw5bPQutjw&usqp=CAU" alt=""></a>
+  <a href="https://www.twitter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSziH7zLAsEq9VaOXhDz4rP-oMYgPWRpIosOg&usqp=CAU" alt=""></a>
+  <a href="https://www.telegram.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yI_iUBlHmYeOAecdVwUQ_VdvMS4IVt8NXw&usqp=CAU" alt=""></a>
+  <a href="https://www.instagram.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvsEQY69wD353aF_vpttKXMM4xhcDanOkq4Q&usqp=CAU" alt=""></a>
+  <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTL0S2fM6anZwW9ltRCIkvYja-7bd19p5Jg&usqp=CAU" alt=""></a>
+  </div>
+    </div>
+</div>
+
+</div>
+</div>
+<!-- end skill -->
+<br>
+<br>
+</div>
+
+</body>
+</html>
