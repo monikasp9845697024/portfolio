@@ -1,2 +1,2 @@
 # portfolio
-portfolio webpage using HTML and CSS
+portfolio webpage using HTML and CSS only
